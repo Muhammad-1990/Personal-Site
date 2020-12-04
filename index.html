@@ -248,7 +248,7 @@ main .container{
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  
+  filter: grayscale(1);
     border-radius: 50%;
     overflow: hidden;
   
@@ -272,30 +272,30 @@ main .container{
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
+            justify-content: space-between;
+    flex-wrap: wrap;
         }
     
         .intro-footer ul li {
             list-style: none;
-            background-color: #222222;
-            width: fit-content;
-            padding: 5px 20px;
-            border-radius: 25px;
-            display: inline-block;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 0.8em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
             border: 2px solid #2196f3;
-            margin-right: 10px;
-            color: #ffffff;
-            font-size: 0.8em;
+        }
+
+        .intro-footer ul li a{
+            text-decoration: none;
+            padding: 14.5px;
         }
 
         .intro-footer ul li:last-child, .intro-footer ul li:nth-last-child(2) {
-            padding: 5px 10px;
     background-color: #2196f3;
     color: #ffffff;
-        }
-        .intro-footer ul li:last-child .icon, .intro-footer ul li:nth-last-child(2) .icon {
-            padding-right: 0;
         }
     
 
@@ -306,6 +306,9 @@ main .container{
                 color: transparent;
             }
             .header-top ul li a .icon{
+                padding-right: 0px;
+            }
+            .feature ul li a .icon{
                 padding-right: 0px;
             }
         }
