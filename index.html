@@ -139,7 +139,7 @@
     margin: 10px 3px;
     color:white;
         }
-        .header-top ul:first-child li a{
+        .header-top ul:first-child li a,.header-top ul:last-child li a{
             text-decoration: none;
     background-color: transparent;
         }
@@ -152,13 +152,14 @@
     fill: currentColor;
     color: #f3f3f3;
     margin-top: -1px;
+    vertical-align: middle;
         }
         .icon {
             width: 18px;
             height: 18px;
             display: inline-block;
             fill: currentColor;
-            vertical-align: middle;
+            vertical-align: sub;
             color: white;
             padding-right: 5px;
         }
@@ -185,7 +186,10 @@
                 font-size: 0;
                 color: transparent;
             }
-           
+            .header-top ul:last-child li a{
+            text-decoration: none;
+    background-color: #4c4c4c;
+        }
         }
 
         @media only screen and (max-width: 492px) {
@@ -228,7 +232,6 @@ main .container{
 }
 .feature > .intro {
   flex: 1 1 50%;
-  margin: 10px;
 }
 .box {
   position: relative;
@@ -265,7 +268,7 @@ main .container{
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
     border-radius: 50%;
     overflow: hidden;
   
@@ -274,15 +277,9 @@ main .container{
 .intro{
   justify-content: center;
   align-items: center;
-  margin:auto;
-  /* background-color:green; */
+  max-width: 600px;
+            margin: 30px auto;
 }
-
-    
-        .intro {
-            max-width: 600px;
-    margin: 85px 0;
-        }
     
         .intro-footer ul {
             /* background-color: cadetblue; */
@@ -308,6 +305,7 @@ main .container{
         .intro-footer ul li a{
             text-decoration: none;
             padding: 14.5px;
+            color: white;
         }
 
         .intro-footer ul li:last-child, .intro-footer ul li:nth-last-child(2) {
@@ -376,20 +374,17 @@ main .container{
                     <li>
                         <a href="https://facebook.com" target="_blank" title="Linkedin" rel="noopener"><svg class="icon">
                             <use xlink:href="#icon-facebookalt-fill"></use>
-                        </svg>
-                        Facebook</a>
+                        </svg>Facebook</a>
                     </li>
                     <li>
                         <a href="https://twitter.com" target="_blank" title="Linkedin" rel="noopener"><svg class="icon">
                             <use xlink:href="#icon-twitteralt-fill"></use>
-                        </svg>
-                        Twitter</a>
+                        </svg>Twitter</a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/" target="_blank" title="Linkedin" rel="noopener"><svg class="icon">
                             <use xlink:href="#icon-linkedinalt-fill"></use>
-                        </svg>
-                        LinkedIn</a>
+                        </svg>LinkedIn</a>
                     </li>
                 </ul>
             </div>
