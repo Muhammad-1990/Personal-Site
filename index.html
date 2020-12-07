@@ -134,25 +134,26 @@
 
         .header-top ul li a{
             text-decoration: none;
-    background-color: #4c4c4c;
-    border-radius: 25px;
     margin: 10px 3px;
-    color:white;
+    color: white;
+    display: flex;
+    line-height: 32px;
         }
-        .header-top ul:first-child li a,.header-top ul:last-child li a{
-            text-decoration: none;
-    background-color: transparent;
-        }
+
 
         .header-top ul li a .icon {
             width: 16px;
     height: 16px;
-    padding: 7px;
-    display: inline-block;
     fill: currentColor;
     color: #f3f3f3;
-    margin-top: -1px;
-    vertical-align: middle;
+    display: block;
+    padding-left: 1px;
+        }
+        .icon-wrappper{
+            background-color: #4c4c4c;
+    padding: 8px;
+    border-radius: 25px;
+    margin-right: 4px;
         }
         .icon {
             width: 18px;
@@ -161,7 +162,6 @@
             fill: currentColor;
             vertical-align: sub;
             color: white;
-            padding-right: 5px;
         }
     
         
@@ -186,10 +186,6 @@
                 font-size: 0;
                 color: transparent;
             }
-            .header-top ul:last-child li a{
-            text-decoration: none;
-    background-color: #4c4c4c;
-        }
         }
 
         @media only screen and (max-width: 492px) {
@@ -203,10 +199,6 @@
                 font-size: 0;
                 color: transparent;
             }
-            .header-top ul:first-child li a{
-            text-decoration: none;
-    background-color: #4c4c4c;
-        }
         }
 
         main{
@@ -360,31 +352,46 @@ main .container{
             <div class="header-top">
                 <ul>
                     <li>
-                        <a href="tel:+27815893805"><svg class="icon">
-                            <use xlink:href="#icon-phonealt-fill"></use>
-                        </svg>+27 81 589 3805</a>
+                        <a href="tel:+27815893805">
+                            <div class="icon-wrappper">
+                                <svg class="icon"><use xlink:href="#icon-phonealt-fill"></use></svg>
+                            </div>
+                            &nbsp;+27 81 589 3805
+                        </a>
                     </li>
                     <li>
-                        <a href="mailto:M.Ahmod@live.co.za"><svg class="icon">
-                            <use xlink:href="#icon-email-fill"></use>
-                        </svg>M.Ahmod@live.co.za</a>
+                        <a href="mailto:M.Ahmod@live.co.za">
+                            <div class="icon-wrappper">
+                                <svg class="icon"><use xlink:href="#icon-email-fill"></use></svg>
+                            </div>
+                            M.Ahmod@live.co.za
+                        </a>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <a href="https://facebook.com" target="_blank" title="Linkedin" rel="noopener"><svg class="icon">
-                            <use xlink:href="#icon-facebookalt-fill"></use>
-                        </svg>Facebook</a>
+                        <a href="https://facebook.com" target="_blank" title="Linkedin" rel="noopener">
+                            <div class="icon-wrappper">
+                                <svg class="icon"><use xlink:href="#icon-facebookalt-fill"></use></svg>
+                            </div>
+                            Facebook
+                        </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com" target="_blank" title="Linkedin" rel="noopener"><svg class="icon">
-                            <use xlink:href="#icon-twitteralt-fill"></use>
-                        </svg>Twitter</a>
+                        <a href="https://twitter.com" target="_blank" title="Linkedin" rel="noopener">
+                            <div class="icon-wrappper">
+                                <svg class="icon"><use xlink:href="#icon-twitteralt-fill"></use></svg>
+                            </div>
+                            Twitter
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/" target="_blank" title="Linkedin" rel="noopener"><svg class="icon">
-                            <use xlink:href="#icon-linkedinalt-fill"></use>
-                        </svg>LinkedIn</a>
+                        <a href="https://www.linkedin.com/" target="_blank" title="Linkedin" rel="noopener">
+                            <div class="icon-wrappper">
+                                <svg class="icon"><use xlink:href="#icon-linkedinalt-fill"></use></svg>
+                            </div>
+                            LinkedIn
+                        </a>
                     </li>
                 </ul>
             </div>
