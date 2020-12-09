@@ -21,7 +21,10 @@
     <!-- <link rel="preload" href="css/style.css" media="print" onload="this.rel='stylesheet';this.media='all';"> -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" as="style"
         onload="this.onload=null;this.rel='stylesheet'" crossorigin>
-        <link rel="preload" as="image" href="/images/muhammad-ahmod.webp" />
+
+        <link rel="preload" href="/images/muhammad-ahmod.webp" as="image" />
+        <link rel="preload" as="image" href="wolf.jpg" imagesrcset="wolf_400px.jpg 400w, wolf_800px.jpg 800w, wolf_1600px.jpg 1600w" imagesizes="50vw">
+        <link rel=preload href=cat.png as=image imagesrcset="cat.png 1x, cat-2x.png 2x">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="manifest" href="/manifest.json">
@@ -233,7 +236,7 @@ main .container{
 }
 .box {
   position: relative;
-  max-width: 70%;
+  max-width: 35%;
   /* desired width */
   margin: auto;
   border: 15px solid #3c3c3c;
@@ -465,6 +468,7 @@ main .container{
     </script>
     <style>
         .profile-pic{
+            background-image: image-set( "/images/muhammad-ahmod.webp" 1x, "/images/muhammad-ahmod.webp" 2x);
     background-image: url("/images/muhammad-ahmod.webp"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   background-position: center; /* Center the image */
