@@ -21,11 +21,7 @@
     <!-- <link rel="preload" href="css/style.css" media="print" onload="this.rel='stylesheet';this.media='all';"> -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" as="style"
         onload="this.onload=null;this.rel='stylesheet'" crossorigin>
-
-        <!-- <link rel="preload" href="/images/muhammad-ahmod.webp" as="image" /> -->
-
-        <!-- <link rel="preload" as="image" href="/images/muhammad-ahmod.webp" imagesrcset="/images/muhammad-ahmod.webp 250w, /images/muhammad-ahmod.webp 350w, /images/muhammad-ahmod.webp 500w, /images/muhammad-ahmod.webp 700w" imagesizes="50vw"> -->
-       
+        
         <link rel="preload" href="/images/muhammad-ahmod-550px.webp" as="image" imagesrcset="/images/muhammad-ahmod-550px.webp 1x, /images/muhammad-ahmod-550px.webp 2x">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -140,10 +136,18 @@
 
         .header-top ul li a{
             text-decoration: none;
-    margin: 10px 3px;
+    margin: 10px 0px;
     color: white;
     display: flex;
     line-height: 32px;
+        }
+
+        .header-top ul:first-child li a{
+            margin-right: 4px;
+        }
+
+        .header-top ul:last-child li a{
+            margin-left: 4px;
         }
 
 
@@ -159,6 +163,7 @@
             background-color: #4c4c4c;
     padding: 8px;
     border-radius: 25px;
+    margin-right: 4px;
         }
         .icon {
             width: 18px;
@@ -191,8 +196,11 @@
                 font-size: 0;
                 color: transparent;
             }
-            .icon-wrappper{
+            .header-top ul:first-child li a .icon-wrappper{
                 margin-right: 4px;
+        }
+        .header-top ul:last-child li a .icon-wrappper{
+                margin-right: 0;
         }
         }
 
@@ -207,7 +215,10 @@
                 font-size: 0;
                 color: transparent;
             }
-            .icon-wrappper{
+            .header-top ul:first-child li a .icon-wrappper{
+                margin-right: 0;
+        }
+        .header-top ul:last-child li a .icon-wrappper{
                 margin-right: 0;
         }
         }
@@ -238,7 +249,7 @@ main .container{
 }
 .box {
   position: relative;
-  max-width: 70%;
+  max-width: 60%;
   /* desired width */
   margin: auto;
   border: 15px solid #3c3c3c;
