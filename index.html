@@ -103,7 +103,7 @@
     
         header {
             background-color: #353535;
-            border-bottom: 2px solid #0088cc;
+            border-bottom: 2px solid #1673bd;
             padding: 0 10px;
         }
     
@@ -139,7 +139,7 @@
     margin: 10px 0px;
     color: white;
     display: flex;
-    line-height: 32px;
+    line-height: 30px;
         }
 
         .header-top ul:first-child li a{
@@ -152,8 +152,8 @@
 
 
         .header-top ul li a .icon {
-            width: 16px;
-    height: 16px;
+            width: 14px;
+    height: 14px;
     fill: currentColor;
     color: #f3f3f3;
     display: block;
@@ -165,6 +165,15 @@
     border-radius: 25px;
     margin-right: 4px;
         }
+        .icon-wrappper.facebook{
+            background-color: #3b5998;
+        }
+        .icon-wrappper.twitter{
+            background-color: #1da1f2;
+        }
+        .icon-wrappper.linkedin{
+            background-color: #0073b1;
+        }
         .icon {
             width: 18px;
             height: 18px;
@@ -175,53 +184,6 @@
         }
     
         
-    
-        /* @media only screen and (max-width: 1024px) {
-
-            .header-top ul li {
-                width: fit-content;
-            }
-            .header-top ul li .icon{
-                padding-right: 5px;
-            }
-            .header-top ul li a{
-                padding-right: 8px;
-            }
-        } */
-
-        
-        @media only screen and (max-width: 768px) {
-            .header-top ul:last-child li a {
-                line-height: 0;
-                font-size: 0;
-                color: transparent;
-            }
-            .header-top ul:first-child li a .icon-wrappper{
-                margin-right: 4px;
-        }
-        .header-top ul:last-child li a .icon-wrappper{
-                margin-right: 0;
-        }
-        }
-
-        @media only screen and (max-width: 492px) {
-            .header-top ul:first-child li a {
-                line-height: 0;
-                font-size: 0;
-                color: transparent;
-            }
-            .header-top ul:last-child li a {
-                line-height: 0;
-                font-size: 0;
-                color: transparent;
-            }
-            .header-top ul:first-child li a .icon-wrappper{
-                margin-right: 0;
-        }
-        .header-top ul:last-child li a .icon-wrappper{
-                margin-right: 0;
-        }
-        }
 
         main{
             padding: 0 10px;
@@ -249,12 +211,13 @@ main .container{
 }
 .box {
   position: relative;
-  max-width: 60%;
+  max-width: 50%;
   /* desired width */
   margin: auto;
   border: 15px solid #3c3c3c;
   border-radius: 50%;
 }
+
 
 .box:before {
   content: "";
@@ -361,6 +324,62 @@ main .container{
             font-style: normal;
             text-align: center;
         }
+
+        
+    
+        /* @media only screen and (max-width: 1024px) {
+
+            .header-top ul li {
+                width: fit-content;
+            }
+            .header-top ul li .icon{
+                padding-right: 5px;
+            }
+            .header-top ul li a{
+                padding-right: 8px;
+            }
+        } */
+
+        
+        @media only screen and (max-width: 768px) {
+            .header-top ul:last-child li a {
+                line-height: 0;
+                font-size: 0;
+                color: transparent;
+            }
+            .header-top ul:first-child li a .icon-wrappper{
+                margin-right: 4px;
+        }
+        .header-top ul:last-child li a .icon-wrappper{
+                margin-right: 0;
+        }
+        .box {
+  max-width: 60%;
+}
+        }
+
+        @media only screen and (max-width: 492px) {
+            .header-top ul:first-child li a {
+                line-height: 0;
+                font-size: 0;
+                color: transparent;
+            }
+            .header-top ul:last-child li a {
+                line-height: 0;
+                font-size: 0;
+                color: transparent;
+            }
+            .header-top ul:first-child li a .icon-wrappper{
+                margin-right: 0;
+        }
+        .header-top ul:last-child li a .icon-wrappper{
+                margin-right: 0;
+        }
+
+        .box {
+  max-width: 70%;
+}
+        }
        
     </style>
 <body>
@@ -388,7 +407,7 @@ main .container{
                 <ul>
                     <li>
                         <a href="https://facebook.com" target="_blank" title="Linkedin" rel="noopener">
-                            <div class="icon-wrappper">
+                            <div class="icon-wrappper facebook">
                                 <svg class="icon"><use xlink:href="#icon-facebookalt-fill"></use></svg>
                             </div>
                             Facebook
@@ -396,7 +415,7 @@ main .container{
                     </li>
                     <li>
                         <a href="https://twitter.com" target="_blank" title="Linkedin" rel="noopener">
-                            <div class="icon-wrappper">
+                            <div class="icon-wrappper twitter">
                                 <svg class="icon"><use xlink:href="#icon-twitteralt-fill"></use></svg>
                             </div>
                             Twitter
@@ -404,7 +423,7 @@ main .container{
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/" target="_blank" title="Linkedin" rel="noopener">
-                            <div class="icon-wrappper">
+                            <div class="icon-wrappper linkedin">
                                 <svg class="icon"><use xlink:href="#icon-linkedinalt-fill"></use></svg>
                             </div>
                             LinkedIn
