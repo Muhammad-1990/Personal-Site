@@ -133,47 +133,52 @@
             align-items: center;
             justify-content: center;
         }
-
-        .header-top ul li a{
+    
+        .header-top ul li a {
             text-decoration: none;
-    margin: 10px 0px;
-    color: white;
-    display: flex;
-    line-height: 30px;
+            margin: 10px 0px;
+            color: white;
+            display: flex;
+            line-height: 30px;
         }
-
-        .header-top ul:first-child li a{
+    
+        .header-top ul:first-child li a {
             margin-right: 4px;
         }
-
-        .header-top ul:last-child li a{
+    
+        .header-top ul:last-child li a {
             margin-left: 4px;
         }
-
-
+    
+    
         .header-top ul li a .icon {
             width: 14px;
-    height: 14px;
-    fill: currentColor;
-    color: #f3f3f3;
-    display: block;
-    padding-left: 1px;
+            height: 14px;
+            fill: currentColor;
+            color: #f3f3f3;
+            display: block;
+            padding-left: 1px;
         }
-        .icon-wrappper{
+    
+        .icon-wrappper {
             background-color: #4c4c4c;
-    padding: 8px;
-    border-radius: 25px;
-    margin-right: 4px;
+            padding: 8px;
+            border-radius: 25px;
+            margin-right: 4px;
         }
-        .icon-wrappper.facebook{
+    
+        .icon-wrappper.facebook {
             background-color: #3b5998;
         }
-        .icon-wrappper.twitter{
+    
+        .icon-wrappper.twitter {
             background-color: #1da1f2;
         }
-        .icon-wrappper.linkedin{
+    
+        .icon-wrappper.linkedin {
             background-color: #0073b1;
         }
+    
         .icon {
             width: 18px;
             height: 18px;
@@ -183,74 +188,78 @@
             color: white;
         }
     
-        
-
-        main{
+    
+    
+        main {
             padding: 0 10px;
         }
-
-main .container{
-    max-width: 1024px;
-    margin: auto;
-}
-
+    
+        main .container {
+            max-width: 1024px;
+            margin: auto;
+        }
+    
         .feature {
-  display: flex;
-  flex-wrap: wrap;
-  max-width:1140px;
-  margin: 25px auto;
-  /* background-color:pink; */
-}
-.feature > .box {
-  flex: 1 1 50%;
-  margin: 10px;
-  margin:auto;
-}
-.feature > .intro {
-  flex: 1 1 50%;
-}
-.box {
-  position: relative;
-  max-width: 50%;
-  /* desired width */
-  margin: auto;
-  border: 15px solid #3c3c3c;
-  border-radius: 50%;
-}
-
-
-.box:before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-  /* initial ratio of 1:1*/
-}
-
-
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: #333;
-  color: #fff;
-  line-height:100%;
-  height:100%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* filter: grayscale(1); */
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.intro{
-    text-align: center;
-  max-width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1024px;
             margin: 25px auto;
-}
+            /* background-color:pink; */
+        }
+    
+        .feature>.box {
+            flex: 1 1 50%;
+            margin: 10px;
+            margin: auto;
+        }
+    
+        .feature>.intro {
+            flex: 1 1 50%;
+        }
+    
+        .box {
+            position: relative;
+            max-width: 40%;
+            /* desired width */
+            margin: auto;
+            border: 15px solid #3c3c3c;
+            border-radius: 50%;
+        }
+    
+    
+        .box:before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+            /* initial ratio of 1:1*/
+        }
+    
+    
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #333;
+            color: #fff;
+            line-height: 100%;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* filter: grayscale(1); */
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    
+        .intro {
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+            padding-left: 0px;
+        }
     
         .intro-footer ul {
             /* background-color: cadetblue; */
@@ -258,44 +267,37 @@ main .container{
             padding: 0;
             display: flex;
             justify-content: space-evenly;
-    flex-wrap: wrap;
+            flex-wrap: wrap;
         }
     
         .intro-footer ul li {
             list-style: none;
-    border-radius: 25px;
-    color: #ffffff;
-    font-size: 0.8em;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+            border-radius: 25px;
+            color: #ffffff;
+            font-size: 0.8em;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border: 2px solid #1673bd;
         }
-
-        .intro-footer ul li a{
+    
+        .intro-footer ul li a {
             text-decoration: none;
             padding: 9.5px 9.5px;
             color: white;
         }
-
-        .intro-footer ul li:last-child, .intro-footer ul li:nth-last-child(2) {
-    background-color: #1673bd;
-    color: #ffffff;
+    
+        .intro-footer ul li:last-child,
+        .intro-footer ul li:nth-last-child(2) {
+            background-color: #1673bd;
+            color: #ffffff;
+        }
+        .intro-footer ul li:hover{
+            background-color: #11609e;
+            transition: 0.3s;
         }
     
-
-        @media only screen and (max-width: 492px) {
-            .feature ul li a {
-                line-height: 0;
-                font-size: 0;
-                color: transparent;
-            }
-            .feature ul li a .icon{
-                padding-right: 0px;
-            }
-        }
-
         h4 {
             font-size: 12px;
             color: #aaa;
@@ -305,85 +307,196 @@ main .container{
     
         h4.sub-title {
             background-color: #1673bd;
-    width: 175px;
-    padding: 2px 10px;
-    border-radius: 7px;
-    color: #ffffff;
-    margin: 0;
-    display: inline-block;
+            width: 175px;
+            padding: 2px 10px;
+            border-radius: 7px;
+            color: #ffffff;
+            margin: 0;
+            display: inline-block;
         }
     
         h1 {
             /* font-size: 45px;
-            line-height: 56px;
-            margin-top: 0;
-            margin-bottom: 20px;
-            color: #f5f5f5;
-            font-family: "Poppins", Helvetica, sans-serif;
-            font-weight: 600;
-            font-style: normal;
-            text-align: center; */
+                line-height: 56px;
+                margin-top: 0;
+                margin-bottom: 20px;
+                color: #f5f5f5;
+                font-family: "Poppins", Helvetica, sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                text-align: center; */
             margin: 20px 0;
-    color: #f5f5f5;
-    font-style: normal;
+            color: #f5f5f5;
+            font-style: normal;
+        }
+    
+    
+    
+         @media only screen and (min-width: 981px) {
+    
+            .box {
+                position: relative;
+    max-width: 40%;
+    border: 15px solid #3c3c3c;
+    border-radius: 50%;
+            }
+            .feature {
+    margin: 75px auto;
+}
+
+            .intro {
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
+    padding-left: 10px;
+}
+.intro h1 {
+            font-size: 3em;
+            margin: 20px 0;
+            color: #f5f5f5;
+            font-style: normal;
         }
 
+
+        .intro-footer ul li a {
+    text-decoration: none;
+    padding: 8px 11px;
+    color: white;
+}
+
+.intro-footer ul {
+    justify-content: space-between;
+}
+
+        } 
+    
+    
+        @media only screen and (max-width: 980px) {
         
     
-        /* @media only screen and (max-width: 1024px) {
+            .header-top ul:first-child li a .icon-wrappper {
+                margin-right: 4px;
+            }
+    
+            .header-top ul:last-child li a .icon-wrappper {
+                margin-right: 4px;
+            }
+    
+            .box {
+                max-width: 50%;
+            }
+            .intro {
+    text-align: center;
+    margin: 25px auto;
+}
+.intro h1 {
+            font-size: 3em;
+        }
+.intro-footer ul li a {
+    text-decoration: none;
+    padding: 9.5px;
+    color: white;
+}
+.intro-footer ul li:last-child a,
+        .intro-footer ul li:nth-last-child(2) a {
+            line-height: 0;
+                font-size: inherit;
+                color: white;
+        }
+        }
 
-            .header-top ul li {
-                width: fit-content;
-            }
-            .header-top ul li .icon{
-                padding-right: 5px;
-            }
-            .header-top ul li a{
-                padding-right: 8px;
-            }
-        } */
-
-        
         @media only screen and (max-width: 768px) {
             .header-top ul:last-child li a {
                 line-height: 0;
                 font-size: 0;
                 color: transparent;
             }
-            .header-top ul:first-child li a .icon-wrappper{
+    
+            .header-top ul:first-child li a .icon-wrappper {
                 margin-right: 4px;
-        }
-        .header-top ul:last-child li a .icon-wrappper{
+            }
+    
+            .header-top ul:last-child li a .icon-wrappper {
                 margin-right: 0;
-        }
-        .box {
-  max-width: 60%;
+            }
+    
+            .box {
+                max-width: 50%;
+            }
+            .intro {
+    text-align: center;
+    margin: 25px auto;
 }
+.intro h1 {
+            font-size: 2em;
         }
-
+.intro-footer ul li a {
+    text-decoration: none;
+    padding: 9.5px;
+    color: white;
+}
+.intro-footer ul li:last-child a,
+        .intro-footer ul li:nth-last-child(2) a {
+            line-height: 0;
+                font-size: inherit;
+                color: white;
+        }
+        }
+    
         @media only screen and (max-width: 492px) {
             .header-top ul:first-child li a {
                 line-height: 0;
                 font-size: 0;
                 color: transparent;
             }
+    
             .header-top ul:last-child li a {
                 line-height: 0;
                 font-size: 0;
                 color: transparent;
             }
-            .header-top ul:first-child li a .icon-wrappper{
+    
+            .header-top ul:first-child li a .icon-wrappper {
                 margin-right: 0;
-        }
-        .header-top ul:last-child li a .icon-wrappper{
+            }
+    
+            .header-top ul:last-child li a .icon-wrappper {
                 margin-right: 0;
-        }
+            }
 
-        .box {
-  max-width: 70%;
+            .feature ul li a {
+                line-height: 0;
+                font-size: 0;
+                color: transparent;
+            }
+    
+            .feature ul li a .icon {
+                padding-right: 0px;
+            }
+    
+            .box {
+                max-width: 70%;
+            }
+
+            .intro {
+    text-align: center;
+    margin: 25px auto;
 }
+.intro h1 {
+            font-size: 2em;
         }
-       
+.intro-footer ul li a {
+    text-decoration: none;
+    padding: 9.5px;
+    color: white;
+}
+.intro-footer ul li:last-child a,
+        .intro-footer ul li:nth-last-child(2) a {
+            line-height: 0;
+                font-size: 0;
+                color: transparent;
+        }
+        }
     </style>
 <body>
     <header>
@@ -391,7 +504,7 @@ main .container{
             <div class="header-top">
                 <ul>
                     <li>
-                        <a href="tel:+27815893805">
+                        <a href="tel:+27815893805" title="Mobile">
                             <div class="icon-wrappper">
                                 <svg class="icon"><use xlink:href="#icon-phonealt-fill"></use></svg>
                             </div>
@@ -400,7 +513,7 @@ main .container{
                     </li>
                     <li>
                         <a href="mailto:M.Ahmod@live.co.za">
-                            <div class="icon-wrappper">
+                            <div class="icon-wrappper" title="Email">
                                 <svg class="icon"><use xlink:href="#icon-email-fill"></use></svg>
                             </div>
                             M.Ahmod@live.co.za
@@ -409,7 +522,7 @@ main .container{
                 </ul>
                 <ul>
                     <li>
-                        <a href="https://facebook.com" target="_blank" title="Linkedin" rel="noopener">
+                        <a href="https://facebook.com" target="_blank" title="Facebook" rel="noopener">
                             <div class="icon-wrappper facebook">
                                 <svg class="icon"><use xlink:href="#icon-facebookalt-fill"></use></svg>
                             </div>
@@ -417,7 +530,7 @@ main .container{
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com" target="_blank" title="Linkedin" rel="noopener">
+                        <a href="https://twitter.com" target="_blank" title="Twitter" rel="noopener">
                             <div class="icon-wrappper twitter">
                                 <svg class="icon"><use xlink:href="#icon-twitteralt-fill"></use></svg>
                             </div>
@@ -445,7 +558,7 @@ main .container{
                 </div>
                 <div class="intro">
                     <div class="intro-header">
-                        <a href="https://en.wikipedia.org/wiki/Web_developer" target="_blank" title="wikipedia" rel="noopener"><h4 class="sub-title">[ Full-Stack Web Developer ]</h4></a>
+                        <a href="https://en.wikipedia.org/wiki/Web_developer" target="_blank" title="Full-Stack Web Developer" rel="noopener"><h4 class="sub-title">[ Full-Stack Web Developer ]</h4></a>
                         <h1 class="name">Muhammad Ahmod</h1>
                     </div>
                     <div class="intro-body">
@@ -458,34 +571,34 @@ main .container{
                     <div class="intro-footer">
                         <ul>
                             <li>
-                                <a href="https://github.com" target="_blank" title="Linkedin" rel="noopener">
+                                <a href="https://github.com" target="_blank" title="Github" rel="noopener">
                                 <svg class="icon">
                                     <use xlink:href="#icon-github-fill"></use>
                                 </svg>
                                 Github</a>
                             </li>
-                            <li><a href="https://stackoverflow.com" target="_blank" title="Linkedin" rel="noopener">
+                            <li><a href="https://stackoverflow.com" target="_blank" title="Stack Overflow" rel="noopener">
                                 <svg class="icon">
                                     <use xlink:href="#icon-stackoverflow-fill"></use>
                                 </svg>
                                 Stack Overflow</a>
                             </li>
                             <li>
-                                <a href="https://codepen.com" target="_blank" title="Linkedin" rel="noopener">
+                                <a href="https://codepen.com" target="_blank" title="Codepen" rel="noopener">
                                 <svg class="icon">
                                     <use xlink:href="#icon-codepen-fill"></use>
                                 </svg>
                                 CodePen</a>
                             </li>
                             <li>
-                                <a href="/share" target="_blank" title="Linkedin" rel="noopener">
+                                <a href="/share" target="_blank" title="Share" rel="noopener">
                                 <svg class="icon">
                                     <use xlink:href="#icon-sharealt-fill"></use>
                                 </svg>
                                 Share</a>
                             </li>
                             <li>
-                                <a href="/print" target="_blank" title="Linkedin" rel="noopener">
+                                <a href="/print" target="_blank" title="Print" rel="noopener">
                                 <svg class="icon">
                                     <use xlink:href="#icon-print-fill"></use>
                                 </svg>
@@ -495,6 +608,140 @@ main .container{
                     </div>
                 </div>
             </div>
+            
+            <div class="connect">
+
+                
+                
+                <div class="social" style="
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    /* background-color: black; */
+">
+                    <div class="text" style="
+    flex: 1 1 50%;
+    /* background-color: blue; */
+    margin: auto;
+    max-width: 600px;
+">
+                    <h4 class="sub-title">[ How to connect with me ]</h4><h1 class="name">Theres More You Need To Know</h1><div class="social-body">
+                        <p>
+                            I have been working with web development for the past 12 years. 
+                            I mostly work with React and Express, though I am also experienced with PHP and CodeIgniter. 
+                            I am really passioned about Accessibility on the web, HTML5 games and Progressive Web Apps.
+                        </p>
+                        <p>
+                            I am really passioned about Accessibility on the web, HTML5 games and Progressive Web Apps.
+                        </p>
+                    </div>
+                    <ul style="
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+">
+                        <li style="
+    list-style: none;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 0.8em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #1673bd;
+    padding: 7px 25px;
+">
+                            <svg class="icon">
+                                <use xlink:href="#icon-phone-fill"></use>
+                            </svg>
+                            <a>+27 81 589 3805</a>
+                        </li>
+                        <li style="
+    list-style: none;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 0.8em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #1673bd;
+    padding: 7px 25px;
+">
+                            <svg class="icon">
+                                <use xlink:href="#icon-email-fill"></use>
+                            </svg>
+                            <a>M.Ahmod@live.co.za</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="graphic" style="/* background-color: blueviolet; */margin: 45px auto;">
+        <div class="window" style="
+    border: 2px solid #2f2f2f;
+    /* border-radius: 25px; */
+    margin: 20px;
+    background-color: #292929;
+    color: #fdfdfd;
+">
+        <div class="command-bar" style="
+    background-color: #212121;
+    /* width: 100%; */
+    /* height: 50px; */
+    /* border-radius: 25px 25px 0 0; */
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+">
+        <span class="red" style="
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 2px;
+"></span>
+        <span class="yellow" style="
+    background-color: #FFC107;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 2px;
+"></span>
+        <span class="green" style="
+    background-color: #4CAF50;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 2px;
+"></span>
+        </div>
+        <div class="data" style="
+    padding: 24px 0;
+">
+                            
+        <ol style="
+    padding: 0 30px;
+">
+            <li>{</li>
+            <li><span class="blue-lite">Job Statuses</span> : <span class="white">["Employed", "Accepting Offers"]</span>,</li>
+            <li><span class="blue-lite">Employment Intrests</span> : <span class="white">["On-Site", "Remote", "Freelance"]</span>,</li>
+            <li><span class="blue-lite">Location</span> : <span class="white">Cape Town, South Africa</span>,</li>
+            <li><span class="blue-lite">Nationality</span> : <span class="white">South African</span>,</li>
+            <li><span class="blue-lite">Immigration Stance</span> : <span class="white">["Require VISA sponsorship"]</span>,</li>
+            <li>}</li>
+        </ol>
+        
+        </div>
+        </div>
+                </div>
+                </div>
+        
+                
+            </div>
+
+
         </div>
     </main>
 
@@ -510,7 +757,7 @@ main .container{
     background-image: image-set( url('/images/muhammad-ahmod-550px.webp') 1x, url('/images/muhammad-ahmod-550px.webp') 2x);
 
     /*background-image: url("/images/muhammad-ahmod.webp");*/  /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
+  background-color: #484848; /* Used if the image is unavailable */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -617,128 +864,15 @@ main .container{
 </svg>
 
 <!-- 
-
-<main class="container">
-    <div class="header">
-        <div class="media">
-            <div class="media-wrapper">
-                <img src="/images/muhammad-ahmod.jpg">
-            </div>
-        </div>
-        <div class="intro">
-            <div class="intro-header">
-                <h4 class="sub-title">[ Full-Stack Web Developer ]</h4>
-                <h1 class="name">Muhammad Ahmod</h1>
-            </div>
-            <div class="intro-body">
-                <p>
-                    I have been working with web development for the past 12 years. 
-                    I mostly work with React and Express, though I am also experienced with PHP and CodeIgniter. 
-                    I am really passioned about Accessibility on the web, HTML5 games and Progressive Web Apps.
-                </p>
-            </div>
-            <div class="intro-footer">
-                <ul>
-                    <li>
-                        <svg class="icon">
-                            <use xlink:href="#icon-github-fill"></use>
-                        </svg>
-                        <a>Github</a>
-                    </li>
-                    <li>
-                        <svg class="icon">
-                            <use xlink:href="#icon-stackoverflow-fill"></use>
-                        </svg>
-                        <a>Stack Overflow</a>
-                    </li>
-                    <li>
-                        <svg class="icon">
-                            <use xlink:href="#icon-codepen-fill"></use>
-                        </svg>
-                        <a>CodePen</a>
-                    </li>
-                    <li>
-                        <svg class="icon">
-                            <use xlink:href="#icon-sharealt-fill"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg class="icon">
-                            <use xlink:href="#icon-print-fill"></use>
-                        </svg>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<div class="experience">
+    <h1 class="name">What I Do Best</h1>
+    <p class="subscript">I have been working with web development for the past 12 years  mostly work with React and Express, though</p>
+    <div class="experience-body">
+        <ul>
+            <li>aaa</li>
+            <li>bbb</li>
+            <li>ccc</li>
+            <li>ddd</li>
+        </ul>
     </div>
-
-    <div class="content">
-
-        <h4 class="sub-title">[ How to connect with me ]</h4>
-        <h1 class="name">Theres More You Need To Know</h1>
-        <div class="social">
-            <div class="text">
-            <div class="social-body">
-                <p>
-                    I have been working with web development for the past 12 years. 
-                    I mostly work with React and Express, though I am also experienced with PHP and CodeIgniter. 
-                    I am really passioned about Accessibility on the web, HTML5 games and Progressive Web Apps.
-                </p>
-                <p>
-                    I am really passioned about Accessibility on the web, HTML5 games and Progressive Web Apps.
-                </p>
-            </div>
-            <ul>
-                <li>
-                    <svg class="icon">
-                        <use xlink:href="#icon-phone-fill"></use>
-                    </svg>
-                    <a>+27 81 589 3805</a>
-                </li>
-                <li>
-                    <svg class="icon">
-                        <use xlink:href="#icon-email-fill"></use>
-                    </svg>
-                    <a>M.Ahmod@live.co.za</a>
-                </li>
-            </ul>
-        </div>
-        <div class="graphic">
-<div class="window">
-<div class="command-bar">
-<span class="red"></span>
-<span class="yellow"></span>
-<span class="green"></span>
-</div>
-<div class="data">
-                    
-<ol>
-    <li>{</li>
-    <li><span class="blue-lite">Job Statuses</span> : <span class="white" >["Employed", "Accepting Offers"]</span>,</li>
-    <li><span class="blue-lite">Employment Intrests</span> : <span class="white" >["On-Site", "Remote", "Freelance"]</span>,</li>
-    <li><span class="blue-lite">Location</span> : <span class="white">Cape Town, South Africa</span>,</li>
-    <li><span class="blue-lite">Nationality</span> : <span class="white">South African</span>,</li>
-    <li><span class="blue-lite">Immigration Stance</span> : <span class="white">["Require VISA sponsorship"]</span>,</li>
-    <li>}</li>
-</ol>
-
-</div>
-</div>
-        </div>
-        </div>
-
-        <div class="experience">
-            <h1 class="name">What I Do Best</h1>
-            <p class="subscript">I have been working with web development for the past 12 years  mostly work with React and Express, though</p>
-            <div class="experience-body">
-                <ul>
-                    <li>aaa</li>
-                    <li>bbb</li>
-                    <li>ccc</li>
-                    <li>ddd</li>
-                </ul>
-            </div>
-            </div>
-    </div>
-    
-</main> -->
+    </div> -->
